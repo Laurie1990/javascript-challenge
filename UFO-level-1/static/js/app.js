@@ -12,7 +12,6 @@ d3.select("form").on("submit", runEnter);
 // Select table
 var tbody = d3.select("tbody");
 
-// YOUR CODE HERE!
 // Step 1: Loop Through `data` and console.log each weather report object
 function runEnter() {
 
@@ -24,19 +23,26 @@ function runEnter() {
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
 
+  //log input date
   console.log(inputValue);
-  console.log("Yeah buddy!");
+
+  var filteredData = tableData.filter(ufo => ufo.datetime === inputValue);
+
+  if (filteredData.length==0) {
+    tbody.html("");
+    tbody.append("tr").text(`No sightings on${inputValue} `);
+    return;
+  }
   
-// // Step 5: Use d3 to update each cell's text with
-// // weather report values (weekday, date, high, low)
+  console.log(filteredData);
+
+// Clear input from previous form submission
 tbody.html("");
-data.forEach(function(tableData) {
-  console.log(tableData);
+//loop through table and append rows wih data
+filteredData.forEach(function(filteredData) {
+  //console.log(filteredData);
   var row = tbody.append("tr");
-  Object.entries(tableData).forEach(function([key, value]) {
-    console.log(key, value);
-    // Append a cell to the row for each value
-    // in the weather report object
+  Object.entries(filteredData).forEach(function([key, value]) {
     var cell = row.append("td");
     cell.text(value);
   });
