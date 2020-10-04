@@ -7,12 +7,6 @@ var button = d3.select("#filter-btn");
 // Select table
 var tbody = d3.select("tbody");
 
-// Select the input element and get the raw HTML node
-var inputElement = d3.select("#datetime");
-// Get the value property of the input element
-var inputValue = inputElement.property("value");
-
-
 // YOUR CODE HERE!
 // Step 1: Loop Through `data` and console.log each weather report object
 function runEnter() {
@@ -42,3 +36,8 @@ data.forEach(function(tableData) {
 button.on("click", runEnter);
 //Update input on hitting Enter
 d3.select("form").on("submit", runEnter);
+
+// Select the input element and get the raw HTML node
+var inputElement = d3.select("#datetime");
+// Get the value property of the input element
+var inputValue = inputElement.property("value");
