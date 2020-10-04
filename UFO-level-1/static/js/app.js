@@ -4,6 +4,11 @@ var tableData = data;
 // Select the button
 var button = d3.select("#filter-btn");
 
+// Event handler for button click
+button.on("click", runEnter);
+//Update input on hitting Enter
+d3.select("form").on("submit", runEnter);
+
 // Select table
 var tbody = d3.select("tbody");
 
@@ -13,10 +18,15 @@ function runEnter() {
 
   d3.event.preventDefault();
 
+  // Select the input element and get the raw HTML node
+  var inputElement = d3.select("#datetime");
+
+  // Get the value property of the input element
+  var inputValue = inputElement.property("value");
+
+  console.log(inputValue);
   console.log("Yeah buddy!");
-
-  console.log(inputValue)
-
+  
 // // Step 5: Use d3 to update each cell's text with
 // // weather report values (weekday, date, high, low)
 tbody.html("");
@@ -32,12 +42,6 @@ data.forEach(function(tableData) {
   });
 });
 };
-// Event handler for button click
-button.on("click", runEnter);
-//Update input on hitting Enter
-d3.select("form").on("submit", runEnter);
 
-// Select the input element and get the raw HTML node
-var inputElement = d3.select("#datetime");
-// Get the value property of the input element
-var inputValue = inputElement.property("value");
+
+
