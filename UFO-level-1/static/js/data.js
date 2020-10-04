@@ -970,31 +970,31 @@ var data = [{
     durationMinutes: "30 seconds",
     comments: "Fireballs seen from Ceres&#44 California"
   },
-  {
-    datetime: "1/13/2010",
-    city: "white oak",
-    state: "pa",
-    country: "us",
-    shape: "triangle",
-    durationMinutes: "30 seconds",
-    comments: "Blinking lights on a rectanglar shaped object spotted in the sky in White Oak&#44 PA."
-  },
-  {
-    datetime: "1/13/2010",
-    city: "ackerman",
-    state: "ms",
-    country: "us",
-    shape: "light",
-    durationMinutes: "2 hours",
-    comments: "A bright light hovering in the southwestern sky.  ((NUFORC Note:  Possible sighting of Sirius.  PD))"
-  },
-  {
-    datetime: "1/13/2010",
-    city: "gulf breeze",
-    state: "fl",
-    country: "us",
-    shape: "unknown",
-    durationMinutes: "4 minutes",
-    comments: "Bright orange object&#44 rapid speed and direction changes .."
-  }
+  // {
+  //   datetime: "1/13/2010",
+  //   city: "white oak",
+  //   state: "pa",
+  //   country: "us",
+  //   shape: "triangle",
+  //   durationMinutes: "30 seconds",
+  //   comments: "Blinking lights on a rectanglar shaped object spotted in the sky in White Oak&#44 PA."
+  // },
+  // {
+  //   datetime: "1/13/2010",
+  //   city: "ackerman",
+  //   state: "ms",
+  //   country: "us",
+  //   shape: "light",
+  //   durationMinutes: "2 hours",
+  //   comments: "A bright light hovering in the southwestern sky.  ((NUFORC Note:  Possible sighting of Sirius.  PD))"
+  // },
+  // {
+  //   datetime: "1/13/2010",
+  //   city: "gulf breeze",
+  //   state: "fl",
+  //   country: "us",
+  //   shape: "unknown",
+  //   durationMinutes: "4 minutes",
+  //   comments: "Bright orange object&#44 rapid speed and direction changes .."
+  // }
 ];
