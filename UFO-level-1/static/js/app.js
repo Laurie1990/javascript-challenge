@@ -34,7 +34,7 @@ function runEnter() {
     return;
   }
   
-  console.log(filteredData);
+  //console.log(filteredData);
 
 // Clear input from previous form submission
 tbody.html("");
@@ -43,6 +43,7 @@ filteredData.forEach(function(filteredData) {
   //console.log(filteredData);
   var row = tbody.append("tr");
   Object.entries(filteredData).forEach(function([key, value]) {
+    console.log(key, value);
     var cell = row.append("td");
     cell.text(value);
   });
