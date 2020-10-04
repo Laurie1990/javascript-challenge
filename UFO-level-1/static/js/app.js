@@ -30,7 +30,7 @@ function runEnter() {
 
   if (filteredData.length==0) {
     tbody.html("");
-    tbody.append("tr").text(`No sightings on${inputValue} `);
+    tbody.append("tr").text(`No sightings on ${inputValue} `);
     return;
   }
   
